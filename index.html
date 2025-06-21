@@ -1,40 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href='style.css' />
-  <script src="src/index.js"></script>
-  <title>KidsMDb</title>
-</head>
-<body>
-  <h2>Movies Database</h2>
-  
-  <ul>
-    <li>
-      <h3>The Brave Little Toaster</h3>
-      <div>ID: 1</div>
-    </li>
-    <li>
-      <h3>The Princess Bride</h3>
-      <div>ID: 2</div>
-    </li>
-    <li>
-      <h3>Spirited Away</h3>
-      <div>ID: 3</div>
-    </li>
-  </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fetch-on-Demand</title>
+  </head>
+  <body>
+    <h1>Joke Time!</h1>
 
-  <section>
-    <form>
-      <label for="searchByID">Search By ID</label>
-      <input id="searchByID" type="text" placeholder="Enter ID here"/>
-      <input type="submit" />
+    <form id="joke-form">
+      <label for="num-jokes">How many jokes?</label>
+      <input type="number" id="num-jokes" name="numJokes" min="1" value="1" />
+      <button type="submit">Get Jokes</button>
     </form>
-  </section>
-  <section id="movieDetails">
-    <h4>Title</h4>
-    <p>Summary</p>
-  </section>
-</body>
+
+    <ul id="joke-list"></ul>
+
+    <script src="index.js"></script>
+  </body>
 </html>
